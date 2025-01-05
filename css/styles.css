@@ -326,6 +326,70 @@ td img {
     color: #555;
 }
 
+/* Accordion Styles */
+.accordion {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-button {
+    background-color: #f1f1f1;
+    color: #444;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-button:hover,
+.accordion-button[aria-expanded="true"] {
+    background-color: #e2e2e2;
+}
+
+.accordion-icon {
+    transition: transform 0.3s ease;
+}
+
+.accordion-button[aria-expanded="true"] .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    background-color: #fafafa;
+    padding: 0 15px;
+}
+
+.accordion-content p,
+.accordion-content ul {
+    margin: 15px 0;
+}
+
+.accordion-item[aria-expanded="true"] .accordion-content {
+    padding: 15px;
+    max-height: 1000px; /* Arbitrary large value to accommodate content */
+}
+
+/* Icon Styling (Optional) */
+.accordion-icon::before {
+    content: '\25BC'; /* Down arrow */
+    font-size: 1em;
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

@@ -27,90 +27,226 @@
 
 <main>
     <h1>Habit Tracker Help Guide</h1>
-    <section>
-        <h2>Creating and Managing Habits</h2>
-        <h3>How can I mark a Habit as complete?</h3>
-        <p>
-            To mark a habit as complete, navigate to the <strong>View Habits</strong> screen, and click on the habit. A menu will appear giving you the option to <strong>‘Mark Complete’</strong>, <strong>‘View Progress’</strong>, <strong>‘Edit’</strong>, or <strong>‘Delete’</strong> the habit.
-        </p>
-        <p>
-            After clicking <strong>Mark Complete</strong>, a confirmation message will appear. If you have already marked the habit as complete today, a message will appear advising <strong>‘Habit already marked complete today!’</strong>
-        </p>
-
-        <h3>How can I delete a Habit?</h3>
-        <p>
-            To delete a habit, navigate to the <strong>View Habits</strong> screen, tap on the habit you would like to delete, and select <strong>‘Delete’</strong>.
-        </p>
-
-        <h3>I Completed my habit yesterday but forgot to mark it complete. Can I mark previous days as complete?</h3>
-        <p>
-            Absolutely! To do this:
-        </p>
-        <ul>
-            <li>Open the Progress screen for the habit you want to update (<strong>View Habits</strong> -> Click the Habit -> Click <strong>View Progress</strong>).</li>
-            <li>Find the day you want to mark complete on the Completions Calendar.</li>
-            <li>Click on the day you want to mark complete.</li>
-            <li>A confirmation window will appear, asking if you'd like to mark that day as complete.</li>
-            <li>After clicking yes, the day will be marked complete.</li>
-        </ul>
-        <p><strong>Note:</strong> You cannot mark a day before the habit's start date as complete.</p>
-    </section>
 
     <section>
-        <h2>Tracking Progress</h2>
-        <h3>How are the Weekly and Monthly Completion scores calculated?</h3>
-        <p>
-            The <strong>Weekly</strong> and <strong>Monthly Completion</strong> scores are calculated based on how many times you completed the habit this week/month compared to how many times the habit is expected to be completed.
-        </p>
-        <p>Examples:</p>
-        <ul>
-            <li>Completing a habit <strong>once per week</strong> for a <strong>Daily Habit</strong> will give a weekly score of <strong>14%</strong>.</li>
-            <li>Completing a habit <strong>once this week</strong> for a <strong>Weekly Habit</strong> will give a score of <strong>100%</strong>.</li>
-        </ul>
-        <p>
-            For <strong>Custom Habits</strong>, if a habit is expected to be completed on specific days (e.g., Tuesday and Thursday) and you complete the habit on Tuesday, the Weekly Score will be <strong>50%</strong>.
-        </p>
+        <!-- Creating and Managing Habits -->
+        <h3>Creating and Managing Habits</h3>
+        <div class="accordion">
 
-        <h3>Why is the completion score in my Monthly Report and View Progress different?</h3>
-        <p>
-            The <strong>View Progress</strong> score shows your progress as it builds up over time, starting at 0% and increasing as you complete your habit. The <strong>Monthly Report</strong> reflects your overall consistency for the month, starting at 100% and decreasing only when you miss an expected completion date.
-        </p>
+            <div class="accordion-item">
+                <button class="accordion-button" aria-expanded="false">
+                    How can I mark a Habit as complete?
+                    <span class="accordion-icon"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        To mark a habit as complete, navigate to the <strong>View Habits</strong> screen, and click on the habit. A menu will appear giving you the option to <strong>‘Mark Complete’</strong>, <strong>‘View Progress’</strong>, <strong>‘Edit’</strong>, or <strong>‘Delete’</strong> the habit.
+                    </p>
+                    <p>
+                        After clicking <strong>Mark Complete</strong>, a confirmation message will appear. If you have already marked the habit as complete today, a message will appear advising <strong>‘Habit already marked complete today!’</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-button" aria-expanded="false">
+                    How can I delete a Habit?
+                    <span class="accordion-icon"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        To delete a habit, navigate to the <strong>View Habits</strong> screen, tap on the habit you would like to delete, and select <strong>‘Delete’</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-button" aria-expanded="false">
+                    I completed my habit yesterday but forgot to mark it complete. Can I mark previous days as complete?
+                    <span class="accordion-icon"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Absolutely! To do this:
+                    </p>
+                    <ul>
+                        <li>Open the Progress screen for the habit you want to update (<strong>View Habits</strong> -> Click the Habit -> Click <strong>View Progress</strong>).</li>
+                        <li>Find the day you want to mark complete on the Completions Calendar.</li>
+                        <li>Click on the day you want to mark complete.</li>
+                        <li>A confirmation window will appear, asking if you'd like to mark that day as complete.</li>
+                        <li>After clicking yes, the day will be marked complete.</li>
+                    </ul>
+                    <p><strong>Note:</strong> You cannot mark a day before the habit's start date as complete.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Tracking Progress -->
+        <h3>Tracking Progress</h3>
+        <div class="accordion">
+
+            <div class="accordion-item">
+                <button class="accordion-button" aria-expanded="false">
+                    How are the Weekly and Monthly Completion scores calculated?
+                    <span class="accordion-icon"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        To mark a habit as complete, navigate to the <strong>View Habits</strong> screen, and click on the habit. A menu will appear giving you the option to <strong>‘Mark Complete’</strong>, <strong>‘View Progress’</strong>, <strong>‘Edit’</strong>, or <strong>‘Delete’</strong> the habit.
+                    </p>
+                    <p>
+                        After clicking <strong>Mark Complete</strong>, a confirmation message will appear. If you have already marked the habit as complete today, a message will appear advising <strong>‘Habit already marked complete today!’</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-button" aria-expanded="false">
+                    Why is the completion score in my Monthly Report and View Progress different?
+                    <span class="accordion-icon"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        To delete a habit, navigate to the <strong>View Habits</strong> screen, tap on the habit you would like to delete, and select <strong>‘Delete’</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h3>Setting Up Reminders</h3>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-button" aria-expanded="false">
+                    How do I set reminders for my habits?
+                    <span class="accordion-icon"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        To set up Habit Reminders:
+                    </p>
+                    <ul>
+                        <li>Navigate to the <strong>Settings</strong> screen by tapping the gear icon on the Home screen.</li>
+                        <li>Tap on Reminders to open the <strong>Reminder</strong> Settings view.</li>
+                        <li>Use the toggle switch next to each habit to enable/disable reminders.</li>
+                    </ul>
+                    <p><strong>Note:</strong>With the Premium Version, you have the option of selecting the time for your Habit Reminder notification. </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button" aria-expanded="false">
+                    Why didn't my reminder for my habit come today?
+                    <span class="accordion-icon"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        There are a few reasons why the reminders for your habit may not appear:
+                    </p>
+                    <ul>
+                        <li>
+                            For habits that are not daily habits, (such as Custom, Weekly or Monthly habits) the habit will only appear on the day that it is scheduled to be completed.
+                            For example the reminder for a habit that is scheduled for every Tuesday, will only appear on Tuesdays.<br><br>
+                        </li>
+                        <li>
+                            The reminder for a habit will only appear if your habit has not already been completed for that day. For example, if the reminder is set for 10AM,
+                            and you mark the habit as complete at 8am, then the reminder will not appear.
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Note:</strong>You are able to toggle reminders for each habit in the Settings page, with the reminders designed to appear on the days that you expect to complete the habit based on your frequency. <br><br>
+                        By default, these habits are scheduled for 10am at your local time. With Premium, you have the ability to customize the time the reminders are sent for each reminder. E.g, A reminder for 'Exercise' being set for 9am, while a reminder for 'Reading' can be set for 3pm.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Data Management -->
+        <h3>Data Management</h3>
+        <div class="accordion">
+
+            <div class="accordion-item">
+                <button class="accordion-button" aria-expanded="false">
+                    If I uninstall the app, will I lose all of my data?
+                    <span class="accordion-icon"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Yes, uninstalling the app will delete your habit data. Make sure to export your data before uninstalling if you need to back it up.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button" aria-expanded="false">
+                    How can I export my data as a CSV file?
+                    <span class="accordion-icon"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        To export your data:
+                    </p>
+                    <ul>
+                        <li>Open the <strong>Settings</strong> Page (gear icon on the Home Screen).</li>
+                        <li>Select <strong>Export to CSV.</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Premium Features -->
+        <h3>Premium Features</h3>
+        <div class="accordion">
+
+            <div class="accordion-item">
+                <button class="accordion-button" aria-expanded="false">
+                    I just upgraded to Premium. How can I choose a Color and Category for my existing habits?
+                    <span class="accordion-icon"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        To choose a Color and Category for your existing habits, navigate to the <strong>View Habits</strong> screen, and click on the habit. A menu will appear giving you the option to click <strong>‘Edit’</strong>, which will take you to the Edit Screen for the habit.
+                        Here you can change the Color and Category for your habit.
+                    </p>
+                    <p>
+                        By default, the habits that you created before upgrading to premium will be in the 'Other' category.
+                    </p>
+                    <p>
+                        You can select from the following categories: <strong>Health, Educational, Fitness, Social, Personal Growth, Work, Financial</strong> and <strong>Other.</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-button" aria-expanded="false">
+                    How can I change the time for my Reminders for my habits?
+                    <span class="accordion-icon"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        When setting a new reminder in the <strong>Settings</strong> screen, if you have the premium version, the app will prompt you to select a time for the reminder for your habit.
+                    </p>
+                    <p>
+                        To change the time of the reminder. Simply turn the reminder off for that Habit, and turn it back on. You will once again be prompted to select a time for your reminder.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button" aria-expanded="false">
+                    I previously purchased the Premium version in the past, and I've recently reinstalled the app and noticed I don't have the premium features anymore.
+                    <span class="accordion-icon"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        No worries—just open the app’s Settings screen and tap <strong>‘Restore Purchases’</strong>. As long as you’re signed in with the same Google account you used to buy premium originally, it should instantly unlock all your premium features again!
+                    </p>
+                    <p>
+                        If you still do not see the Premium Features after clicking the <strong>‘Restore Purchases’</strong> button, double-check that you are using the same Google account you used to buy premium with. If the issue still persists, please reach out to me at johhnycwatt@gmail.com and I will investigate further.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Setting Up Reminders</h2>
-        <h3>How do I set reminders for my habits?</h3>
-        <p>To set up Habit Reminders:</p>
-        <ul>
-            <li>Navigate to the <strong>Settings</strong> screen by tapping the gear icon on the Home screen.</li>
-            <li>Tap on <strong>Reminders</strong> to open the Reminder Settings view.</li>
-            <li>Use the toggle switch next to each habit to enable/disable reminders.</li>
-        </ul>
-        <p>
-            Notifications are scheduled based on the habit's frequency, whether daily, weekly, or custom days.
-        </p>
-    </section>
-
-    <section>
-        <h2>Data Management</h2>
-        <h3>How can I export my data as a CSV file?</h3>
-        <p>
-            To export your data:
-        </p>
-        <ul>
-            <li>Open the <strong>Settings Page</strong> (gear icon on the Home Screen).</li>
-            <li>Select <strong>Export to CSV</strong>.</li>
-        </ul>
-
-        <h3>If I uninstall the app, will I lose all of my data?</h3>
-        <p>
-            Yes, uninstalling the app will delete your habit data. Make sure to export your data before uninstalling if you need to back it up.
-        </p>
-    </section>
 </main>
 
 <footer>
     <p>&copy; 2024 Johnny Watt. All Rights Reserved.</p>
 </footer>
+
+<script src="js/accordion.js"></script>
 </body>
 </html>
