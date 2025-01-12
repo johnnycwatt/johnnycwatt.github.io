@@ -201,12 +201,25 @@ footer p {
     color: #555;
 }
 
-footer a {
-    color: #0066cc;
-    text-decoration: none;
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: inline-flex;
+    gap: 15px;
 }
 
-footer a:hover {
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
     text-decoration: underline;
 }
 
