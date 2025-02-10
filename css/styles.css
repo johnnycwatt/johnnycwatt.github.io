@@ -298,7 +298,7 @@ td img {
 }
 
 .habittracker-nav-link:hover {
-    color: #0044cc; 
+    color: #0044cc;
 }
 
 .premium-features {
@@ -507,4 +507,17 @@ form select {
         font-size: 1.5rem;
         margin-bottom: 10px;
     }
+}
+
+.screenshots {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.screenshots .screenshot {
+  width: 32%;
+  height: auto;
 }
