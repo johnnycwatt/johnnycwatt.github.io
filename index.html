@@ -1,73 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Johnny Watt's portfolio showcasing projects.">
-    <meta name="keywords" content="portfolio, habit tracker, app development">
-    <meta name="author" content="Johnny Watt">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/png" href="favicon.ico">
-    <title>Johnny Watt Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Johnny Chadwick-Watt's portfolio showcasing software engineering and mobile app projects." />
+    <meta name="keywords" content="portfolio, software engineering, mobile apps, C++, Python" />
+    <meta name="author" content="Johnny Chadwick-Watt" />
+    <title>Johnny Chadwick-Watt</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+<!-- Navigation -->
 <header>
-    <h1>Johnny C Watt</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
+    <nav class="navbar">
+        <div class="logo">Johnny Chadwick-Watt</div>
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#apps">Mobile Apps</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<main>
-    <section id="welcome">
-        <h2>Welcome to My Portfolio</h2>
-        <p>
-            I am a Software Developer who develops mobile applications for both Android and iOS devices. My projects are predominantly in the productivity and lifestyle categories and I am currently working as an individual developer. My ambition is to develop software which improves the lives of others and provides value to the world.
-        </p>
-    </section>
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Aspiring <span>Software Engineer</span>
 
-    <section id="projects-overview">
-        <h2>Featured Projects</h2>
-        <div class="project">
-            <div class="project-content">
-                <div class="project-details">
-                    <h3>Habit Tracker - Plan, Succeed</h3>
-                    <p>A simple productivity app to help you build and maintain good habits.</p>
-                    <a href="habittracker.html" class="learn-more">Learn More</a>
-                </div>
-                <img src="images/index/habittracker-screenshot.png" alt="Habit Tracker Screenshot" class="project-screenshot">
+        </h1>
+        <p>Final-year Computer Science student passionate about software engineering and AI. Currently based in Seoul, South Korea.</p>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        I'm a final year Computer Science student at Massey University, currently based in Seoul, South Korea.
+        I am passionate about software engineering and AI, with a strong interest in contributing to advancements in technology that will provide value to others.
+    </p>
+</section>
+
+<!-- Technical Projects Section -->
+<section id="projects" class="section">
+    <h2>Technical Projects</h2>
+    <div class="features-mobile">
+        <div class="feature-item project-item">
+            <h3>FTP Server with IPv6 (C++)</h3>
+            <p>RFC 959/2428-compliant FTP server with active mode and IPv6 socket programming. Built for university coursework, 2025.</p>
+            <div class="project-links">
+                <a href="https://github.com/johnnycwatt/ftp-server" target="_blank">View on GitHub</a>
             </div>
         </div>
-        <div class="project">
-            <div class="project-content">
-                <div class="project-details">
-                    <h3>StudyMap - Study Planner</h3>
-                    <p>A simple app to help you stay organized and achieve academic success.</p>
-                    <a href="studymap.html" class="learn-more">Learn More</a>
-                </div>
-                <img src="images/index/studymap-screenshot.png" alt="StudyMap Screenshot" class="project-screenshot">
+        <div class="feature-item project-item">
+            <h3>Caesar Cipher TCP Server-Client (C++)</h3>
+            <p>Cross-platform TCP app for Caesar Cipher encryption, supporting IPv4/IPv6. Personal project, 2025.</p>
+            <div class="project-links">
+                <a href="https://github.com/johnnycwatt/CaesarCipherTCP" target="_blank">View on GitHub</a>
             </div>
         </div>
-    </section>
+        <div class="feature-item project-item">
+            <h3>Psych Profiling Web App (Python, HTML, JS)</h3>
+            <p>Web app generating profiles via http.server and APIs (OMDB, Dog CEO). University assignment, 2025.</p>
+            <div class="project-links">
+                <a href="https://github.com/johnnycwatt/psych-profiling-web-app" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+        <div class="feature-item project-item">
+            <h3>8 Puzzle Solver with AI Search (C++)</h3>
+            <p>AI-driven solver using Uniform Cost and A* algorithms, optimized with priority queues. Personal project, 2024.</p>
+            <div class="project-screenshots">
+                <img src="images/eightPuzzleDemo.png" alt="8 Puzzle Solver Demo" />
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/johnnycwatt/eight-puzzle-solver" target="_blank">View on GitHub</a>
+                <a href="https://eight-puzzle-solver-one.vercel.app" target="_blank">View Demo</a>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Mobile Apps Section -->
+<section id="apps" class="section">
+    <h2>Mobile Apps</h2>
+    <div class="features-mobile">
+        <div class="feature-item app-item">
+        <div class="feature-item app-item">
+            <h3>Habit Tracker - Plan, Succeed</h3>
+            <p>A productivity app to help you build and maintain good habits. Built using React Native and Expo. Async Storage used for local data persistence, available on Google Play.</p>
+            <div class="screenshots">
+                <img src="images/habitHomeScreen.png" alt="Habit Tracker Home" />
+                <img src="images/habitProgressScreen.png" alt="Habit Tracker Progress" />
+                <img src="images/habitReportScreen.png" alt="Habit Tracker Report" />
+            </div>
+            <div class="cta-button">
+                <a href="https://play.google.com/store/apps/details?id=com.johnnycwatt.habittracker" target="_blank">
+                    <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" height="60px">
+                </a>
+            </div>
+        </div>
+        <div class="feature-item app-item">
+            <h3>StudyMap - Study Planner</h3>
+            <p> A study planner that helps students stay organized and excel academically with features like task management and a smart calendar view. Built with React Native and Expo for cross-platform functionality, it uses Firebase for secure authentication and data storage, and Redux for efficient state management. Available on Google Play.<br>
+            </p>
+            <div class="screenshots">
+                <img src="images/studymapHomepage.png" alt="StudyMap Home" />
+                <img src="images/studymapCreate.png" alt="StudyMap Create" />
+                <img src="images/studymapCalendar.png" alt="StudyMap Calendar" />
+            </div>
+            <div class="cta-button">
+                <a href="https://play.google.com/store/apps/details?id=com.johnnycwatt.studymap" target="_blank">
+                    <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" height="60px">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Reach out for opportunities or collaboration:</p>
+    <ul class="contact-links">
+        <li>Email: <a href="mailto:johnnycwatt@gmail.com">johnnycwatt@gmail.com</a></li>
+        <li>GitHub: <a href="https://github.com/johnnycwatt" target="_blank">github.com/johnnycwatt</a></li>
+    </ul>
+</section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out for collaboration or opportunities:</p>
-        <ul>
-            <li>Email: <a href="mailto:johnnycwatt@gmail.com">johnnycwatt@gmail.com</a></li>
-            <li>GitHub: <a href="https://github.com/johnnycwatt" target="_blank">github.com/johnnycwatt</a></li>
-        </ul>
-    </section>
-</main>
-
+<!-- Footer -->
 <footer>
-    <p>&copy; 2024 <a href="https://johnnycwatt.github.io/index.html">Johnny Watt</a>. All Rights Reserved.</p>
+    <p>© 2025 Johnny Chadwick-Watt. All rights reserved.</p>
 </footer>
+
+<script src="assets/script.js"></script>
 </body>
 </html>
